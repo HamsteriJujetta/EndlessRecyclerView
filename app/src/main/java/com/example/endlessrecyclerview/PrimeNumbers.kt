@@ -1,13 +1,15 @@
 package com.example.endlessrecyclerview
 
-class PrimeNumbers {
+import java.math.BigInteger
 
-    private var current: Int = 2
+class PrimeNumbers : NumInterface {
 
-    fun next(): Int {
+    private var current = "2"
+
+    override fun next(): String {
         val temp = current
-
-        while (true) {
+        current = BigInteger(current).nextProbablePrime().toString()
+        /*while (true) {
             current++
             var i = 2
             var nonPrime = false
@@ -20,8 +22,7 @@ class PrimeNumbers {
             if (!nonPrime) {
                 break
             }
-        }
-
+        }*/
         return temp
     }
 

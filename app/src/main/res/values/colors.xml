@@ -10,4 +10,6 @@
 
     <color name="custom1">#A32480B1</color>
     <color name="yellow">#FFEF5E</color>
+    <color name="light_grey">#DADADA</color>
+    <color name="dark_grey">#BDBDBD</color>
 </resources>

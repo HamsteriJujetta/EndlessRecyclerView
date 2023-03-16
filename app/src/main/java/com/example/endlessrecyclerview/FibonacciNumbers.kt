@@ -1,19 +1,17 @@
 package com.example.endlessrecyclerview
 
-class FibonacciNumbers {
+class FibonacciNumbers : NumInterface {
 
-    private var a: Int = 0
-    private var b: Int = 1
-    private var sum: Int = a + b
+    private var a = "0"
+    private var b = "1"
+    private var sum = ""
 
-    fun next(): Int {
-        val temp = sum
-
+    override fun next(): String {
+        /*val temp = a
         a = b
         b = sum
-        sum = a + b
-
-        return temp
+        sum = a + b*/
+        return "123"//temp
     }
 
 }
