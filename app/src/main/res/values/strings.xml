@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">EndlessRecyclerView</string>
+    <string name="prime_caption">Простые числа</string>
+    <string name="fibonacci_caption">Числа Фибоначчи</string>
+</resources>
