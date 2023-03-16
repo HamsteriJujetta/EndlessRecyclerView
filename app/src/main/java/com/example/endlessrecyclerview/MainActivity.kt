@@ -4,9 +4,8 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import androidx.recyclerview.widget.RecyclerView
-import android.util.Log
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 
 class MainActivity : AppCompatActivity() {
 
@@ -59,7 +58,6 @@ class MainActivity : AppCompatActivity() {
                 if (loading) {
                     if ((visibleItemCount + pastVisiblesItems) >=totalItemCount ) {
                         loading = false
-                        Log.d("Hamster", "is scared")
                         setList()
                         loading = true
                     }
