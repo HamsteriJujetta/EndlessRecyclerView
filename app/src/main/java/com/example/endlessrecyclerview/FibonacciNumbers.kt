@@ -1,17 +1,21 @@
 package com.example.endlessrecyclerview
 
+import java.math.BigInteger
+
 class FibonacciNumbers : NumInterface {
 
     private var a = "0"
     private var b = "1"
-    private var sum = ""
 
     override fun next(): String {
-        /*val temp = a
-        a = b
+        /*a = b
         b = sum
         sum = a + b*/
-        return "123"//temp
+        val sum = BigInteger(a).add(BigInteger(b)).toString()
+        val temp = a
+        a = b
+        b = sum
+        return temp
     }
 
 }
